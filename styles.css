@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('fondo-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+/* Servicios */
+.servicios {
+    padding: 50px 20px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.servicios h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicio-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.servicio-card i {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.servicio-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.servicio-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Eslogan */
+.eslogan {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    background: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.eslogan-content {
+    max-width: 300px;
+}
+
+.eslogan-content i {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.eslogan-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.eslogan-content p {
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .eslogan {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+/* Portafolio */
+.portafolio {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.portafolio h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.proyecto-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.proyecto-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.proyecto-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.proyecto-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.proyecto-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.proyecto-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.proyecto-info a:hover {
+    text-decoration: underline;
+}
+/* Contacto */
+.contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background: #333333;
+    color: white;
+}
+
+.contacto h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.contacto p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.contacto-form button {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contacto-form button:hover {
+    background: #007BFF;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333333;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+}
